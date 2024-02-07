@@ -1,4 +1,5 @@
 const axios = require("axios");
+require('dotenv').config();
 
 const createToken = async (req, res, next) =>{
     const secret = process.env.SECRET_KEY;
